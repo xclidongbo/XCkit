@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED5D99DF1DD07CCA006A7B97 /* UIButton+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5D99DE1DD07CCA006A7B97 /* UIButton+XCAdd.m */; };
 		ED8FA00E1DCC8A3400902066 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA00D1DCC8A3400902066 /* main.m */; };
 		ED8FA0111DCC8A3400902066 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA0101DCC8A3400902066 /* AppDelegate.m */; };
 		ED8FA0141DCC8A3400902066 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA0131DCC8A3400902066 /* ViewController.m */; };
 		ED8FA0171DCC8A3400902066 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8FA0151DCC8A3400902066 /* Main.storyboard */; };
 		ED8FA0191DCC8A3400902066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8FA0181DCC8A3400902066 /* Assets.xcassets */; };
 		ED8FA01C1DCC8A3400902066 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8FA01A1DCC8A3400902066 /* LaunchScreen.storyboard */; };
-		ED8FA0301DCC943000902066 /* UIButton+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA02F1DCC943000902066 /* UIButton+XCAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED5D99DD1DD07CCA006A7B97 /* UIButton+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XCAdd.h"; sourceTree = "<group>"; };
+		ED5D99DE1DD07CCA006A7B97 /* UIButton+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XCAdd.m"; sourceTree = "<group>"; };
+		ED5D99E01DD07CE8006A7B97 /* XCCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCCategories.h; sourceTree = "<group>"; };
 		ED8FA0091DCC8A3400902066 /* XCkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8FA00D1DCC8A3400902066 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED8FA00F1DCC8A3400902066 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +30,6 @@
 		ED8FA0181DCC8A3400902066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED8FA01B1DCC8A3400902066 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED8FA01D1DCC8A3400902066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED8FA02E1DCC943000902066 /* UIButton+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XCAdd.h"; sourceTree = "<group>"; };
-		ED8FA02F1DCC943000902066 /* UIButton+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XCAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,10 +43,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED5D99DA1DD07CCA006A7B97 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED5D99DB1DD07CCA006A7B97 /* Category */,
+				ED5D99E01DD07CE8006A7B97 /* XCCategories.h */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		ED5D99DB1DD07CCA006A7B97 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				ED5D99DC1DD07CCA006A7B97 /* UIKit */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		ED5D99DC1DD07CCA006A7B97 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				ED5D99DD1DD07CCA006A7B97 /* UIButton+XCAdd.h */,
+				ED5D99DE1DD07CCA006A7B97 /* UIButton+XCAdd.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		ED8FA0001DCC8A3400902066 = {
 			isa = PBXGroup;
 			children = (
-				ED8FA02C1DCC943000902066 /* Classes */,
+				ED5D99DA1DD07CCA006A7B97 /* Classes */,
 				ED8FA00B1DCC8A3400902066 /* XCkit */,
 				ED8FA00A1DCC8A3400902066 /* Products */,
 			);
@@ -81,24 +109,6 @@
 				ED8FA00D1DCC8A3400902066 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		ED8FA02C1DCC943000902066 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				ED8FA02D1DCC943000902066 /* Category */,
-			);
-			name = Classes;
-			path = ../Classes;
-			sourceTree = "<group>";
-		};
-		ED8FA02D1DCC943000902066 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				ED8FA02E1DCC943000902066 /* UIButton+XCAdd.h */,
-				ED8FA02F1DCC943000902066 /* UIButton+XCAdd.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED8FA0301DCC943000902066 /* UIButton+XCAdd.m in Sources */,
+				ED5D99DF1DD07CCA006A7B97 /* UIButton+XCAdd.m in Sources */,
 				ED8FA0141DCC8A3400902066 /* ViewController.m in Sources */,
 				ED8FA0111DCC8A3400902066 /* AppDelegate.m in Sources */,
 				ED8FA00E1DCC8A3400902066 /* main.m in Sources */,
@@ -335,6 +345,7 @@
 				ED8FA0221DCC8A3400902066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

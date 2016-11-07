@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "UIButton+XCAdd.h"
+//#import "UIButton+XCAdd.h"
+#import "XCCategories.h"
 
 @interface ViewController ()
 
@@ -19,10 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeSystem];
     btn.frame = CGRectMake(100, 100, 100, 100);
     [self.view addSubview:btn];
     [btn setTitle:@"zhangsan" forState:UIControlStateNormal];
+    
     [btn handleControlEvent:UIControlEventTouchUpInside withBlock:^(UIButton *sender) {
         NSLog(@"%@",btn.titleLabel.text);
     }];
