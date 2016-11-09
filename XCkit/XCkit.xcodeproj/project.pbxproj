@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED5D99DF1DD07CCA006A7B97 /* UIButton+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5D99DE1DD07CCA006A7B97 /* UIButton+XCAdd.m */; };
+		ED8A0B7D1DD1CA3900F3130A /* UIButton+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B791DD1CA3900F3130A /* UIButton+XCAdd.m */; };
+		ED8A0B7E1DD1CA3900F3130A /* UIScrollView+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B7B1DD1CA3900F3130A /* UIScrollView+XCAdd.m */; };
+		ED8A0B821DD1DB6600F3130A /* UIDevice+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B811DD1DB6600F3130A /* UIDevice+XCAdd.m */; };
+		ED8A0B871DD22DBE00F3130A /* UIAlertController+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B861DD22DBE00F3130A /* UIAlertController+XCAdd.m */; };
 		ED8FA00E1DCC8A3400902066 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA00D1DCC8A3400902066 /* main.m */; };
 		ED8FA0111DCC8A3400902066 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA0101DCC8A3400902066 /* AppDelegate.m */; };
 		ED8FA0141DCC8A3400902066 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA0131DCC8A3400902066 /* ViewController.m */; };
@@ -17,9 +20,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ED5D99DD1DD07CCA006A7B97 /* UIButton+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XCAdd.h"; sourceTree = "<group>"; };
-		ED5D99DE1DD07CCA006A7B97 /* UIButton+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XCAdd.m"; sourceTree = "<group>"; };
-		ED5D99E01DD07CE8006A7B97 /* XCCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCCategories.h; sourceTree = "<group>"; };
+		ED8A0B781DD1CA3900F3130A /* UIButton+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XCAdd.h"; sourceTree = "<group>"; };
+		ED8A0B791DD1CA3900F3130A /* UIButton+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XCAdd.m"; sourceTree = "<group>"; };
+		ED8A0B7A1DD1CA3900F3130A /* UIScrollView+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XCAdd.h"; sourceTree = "<group>"; };
+		ED8A0B7B1DD1CA3900F3130A /* UIScrollView+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XCAdd.m"; sourceTree = "<group>"; };
+		ED8A0B7C1DD1CA3900F3130A /* XCCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCCategories.h; sourceTree = "<group>"; };
+		ED8A0B7F1DD1CA5D00F3130A /* XCCategoryMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCCategoryMacro.h; sourceTree = "<group>"; };
+		ED8A0B801DD1DB6600F3130A /* UIDevice+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+XCAdd.h"; sourceTree = "<group>"; };
+		ED8A0B811DD1DB6600F3130A /* UIDevice+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XCAdd.m"; sourceTree = "<group>"; };
+		ED8A0B841DD22A8B00F3130A /* XCkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCkit.h; sourceTree = "<group>"; };
+		ED8A0B851DD22DBE00F3130A /* UIAlertController+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+XCAdd.h"; sourceTree = "<group>"; };
+		ED8A0B861DD22DBE00F3130A /* UIAlertController+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+XCAdd.m"; sourceTree = "<group>"; };
 		ED8FA0091DCC8A3400902066 /* XCkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8FA00D1DCC8A3400902066 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED8FA00F1DCC8A3400902066 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,29 +54,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ED5D99DA1DD07CCA006A7B97 /* Classes */ = {
+		ED8A0B751DD1CA3900F3130A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				ED5D99DB1DD07CCA006A7B97 /* Category */,
-				ED5D99E01DD07CE8006A7B97 /* XCCategories.h */,
+				ED8A0B761DD1CA3900F3130A /* Category */,
+				ED8A0B841DD22A8B00F3130A /* XCkit.h */,
 			);
 			name = Classes;
 			path = ../Classes;
 			sourceTree = "<group>";
 		};
-		ED5D99DB1DD07CCA006A7B97 /* Category */ = {
+		ED8A0B761DD1CA3900F3130A /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				ED5D99DC1DD07CCA006A7B97 /* UIKit */,
+				ED8A0B771DD1CA3900F3130A /* UIKit */,
+				ED8A0B7C1DD1CA3900F3130A /* XCCategories.h */,
+				ED8A0B7F1DD1CA5D00F3130A /* XCCategoryMacro.h */,
 			);
 			path = Category;
 			sourceTree = "<group>";
 		};
-		ED5D99DC1DD07CCA006A7B97 /* UIKit */ = {
+		ED8A0B771DD1CA3900F3130A /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				ED5D99DD1DD07CCA006A7B97 /* UIButton+XCAdd.h */,
-				ED5D99DE1DD07CCA006A7B97 /* UIButton+XCAdd.m */,
+				ED8A0B781DD1CA3900F3130A /* UIButton+XCAdd.h */,
+				ED8A0B791DD1CA3900F3130A /* UIButton+XCAdd.m */,
+				ED8A0B7A1DD1CA3900F3130A /* UIScrollView+XCAdd.h */,
+				ED8A0B7B1DD1CA3900F3130A /* UIScrollView+XCAdd.m */,
+				ED8A0B801DD1DB6600F3130A /* UIDevice+XCAdd.h */,
+				ED8A0B811DD1DB6600F3130A /* UIDevice+XCAdd.m */,
+				ED8A0B851DD22DBE00F3130A /* UIAlertController+XCAdd.h */,
+				ED8A0B861DD22DBE00F3130A /* UIAlertController+XCAdd.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -73,7 +92,7 @@
 		ED8FA0001DCC8A3400902066 = {
 			isa = PBXGroup;
 			children = (
-				ED5D99DA1DD07CCA006A7B97 /* Classes */,
+				ED8A0B751DD1CA3900F3130A /* Classes */,
 				ED8FA00B1DCC8A3400902066 /* XCkit */,
 				ED8FA00A1DCC8A3400902066 /* Products */,
 			);
@@ -183,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5D99DF1DD07CCA006A7B97 /* UIButton+XCAdd.m in Sources */,
+				ED8A0B871DD22DBE00F3130A /* UIAlertController+XCAdd.m in Sources */,
+				ED8A0B7E1DD1CA3900F3130A /* UIScrollView+XCAdd.m in Sources */,
+				ED8A0B7D1DD1CA3900F3130A /* UIButton+XCAdd.m in Sources */,
+				ED8A0B821DD1DB6600F3130A /* UIDevice+XCAdd.m in Sources */,
 				ED8FA0141DCC8A3400902066 /* ViewController.m in Sources */,
 				ED8FA0111DCC8A3400902066 /* AppDelegate.m in Sources */,
 				ED8FA00E1DCC8A3400902066 /* main.m in Sources */,

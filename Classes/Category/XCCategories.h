@@ -10,6 +10,9 @@
 #define XCCategories_h
 
 #import "UIButton+XCAdd.h"
+#import "UIScrollView+XCAdd.h"
+#import "UIDevice+XCAdd.h"
+#import "UIAlertController+XCAdd.h"
 
 
 #endif /* XCCategories_h */
