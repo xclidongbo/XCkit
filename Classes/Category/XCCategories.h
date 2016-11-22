@@ -13,6 +13,8 @@
 #import "UIScrollView+XCAdd.h"
 #import "UIDevice+XCAdd.h"
 #import "UIAlertController+XCAdd.h"
-
+#import "UIImage+XCAdd.h"
+#import "UIGestureRecognizer+XCAdd.h"
+#import "UIView+XCAdd.h"
 
 #endif /* XCCategories_h */

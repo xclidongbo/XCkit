@@ -8,6 +8,11 @@
 
 #import "UIScrollView+XCAdd.h"
 
+
+@interface UIScrollView ()
+
+@end
+
 @implementation UIScrollView (XCAdd)
 
 - (void)scrollToTop {

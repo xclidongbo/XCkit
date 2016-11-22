@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED4D0F551DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4D0F541DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m */; };
+		ED84DFA31DE2C78500F5E8B3 /* UIView+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED84DFA21DE2C78500F5E8B3 /* UIView+XCAdd.m */; };
 		ED8A0B7D1DD1CA3900F3130A /* UIButton+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B791DD1CA3900F3130A /* UIButton+XCAdd.m */; };
 		ED8A0B7E1DD1CA3900F3130A /* UIScrollView+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B7B1DD1CA3900F3130A /* UIScrollView+XCAdd.m */; };
 		ED8A0B821DD1DB6600F3130A /* UIDevice+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B811DD1DB6600F3130A /* UIDevice+XCAdd.m */; };
 		ED8A0B871DD22DBE00F3130A /* UIAlertController+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B861DD22DBE00F3130A /* UIAlertController+XCAdd.m */; };
+		ED8A0B8A1DD2F8F300F3130A /* UIImage+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B891DD2F8F300F3130A /* UIImage+XCAdd.m */; };
 		ED8FA00E1DCC8A3400902066 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA00D1DCC8A3400902066 /* main.m */; };
 		ED8FA0111DCC8A3400902066 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA0101DCC8A3400902066 /* AppDelegate.m */; };
 		ED8FA0141DCC8A3400902066 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FA0131DCC8A3400902066 /* ViewController.m */; };
@@ -20,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED4D0F531DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+XCAdd.h"; sourceTree = "<group>"; };
+		ED4D0F541DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+XCAdd.m"; sourceTree = "<group>"; };
+		ED84DFA11DE2C78500F5E8B3 /* UIView+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XCAdd.h"; sourceTree = "<group>"; };
+		ED84DFA21DE2C78500F5E8B3 /* UIView+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XCAdd.m"; sourceTree = "<group>"; };
 		ED8A0B781DD1CA3900F3130A /* UIButton+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XCAdd.h"; sourceTree = "<group>"; };
 		ED8A0B791DD1CA3900F3130A /* UIButton+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XCAdd.m"; sourceTree = "<group>"; };
 		ED8A0B7A1DD1CA3900F3130A /* UIScrollView+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XCAdd.h"; sourceTree = "<group>"; };
@@ -31,6 +38,8 @@
 		ED8A0B841DD22A8B00F3130A /* XCkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCkit.h; sourceTree = "<group>"; };
 		ED8A0B851DD22DBE00F3130A /* UIAlertController+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+XCAdd.h"; sourceTree = "<group>"; };
 		ED8A0B861DD22DBE00F3130A /* UIAlertController+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+XCAdd.m"; sourceTree = "<group>"; };
+		ED8A0B881DD2F8F300F3130A /* UIImage+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XCAdd.h"; sourceTree = "<group>"; };
+		ED8A0B891DD2F8F300F3130A /* UIImage+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XCAdd.m"; sourceTree = "<group>"; };
 		ED8FA0091DCC8A3400902066 /* XCkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8FA00D1DCC8A3400902066 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED8FA00F1DCC8A3400902066 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +94,12 @@
 				ED8A0B811DD1DB6600F3130A /* UIDevice+XCAdd.m */,
 				ED8A0B851DD22DBE00F3130A /* UIAlertController+XCAdd.h */,
 				ED8A0B861DD22DBE00F3130A /* UIAlertController+XCAdd.m */,
+				ED8A0B881DD2F8F300F3130A /* UIImage+XCAdd.h */,
+				ED8A0B891DD2F8F300F3130A /* UIImage+XCAdd.m */,
+				ED4D0F531DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.h */,
+				ED4D0F541DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m */,
+				ED84DFA11DE2C78500F5E8B3 /* UIView+XCAdd.h */,
+				ED84DFA21DE2C78500F5E8B3 /* UIView+XCAdd.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -203,7 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8A0B871DD22DBE00F3130A /* UIAlertController+XCAdd.m in Sources */,
+				ED4D0F551DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m in Sources */,
 				ED8A0B7E1DD1CA3900F3130A /* UIScrollView+XCAdd.m in Sources */,
+				ED84DFA31DE2C78500F5E8B3 /* UIView+XCAdd.m in Sources */,
+				ED8A0B8A1DD2F8F300F3130A /* UIImage+XCAdd.m in Sources */,
 				ED8A0B7D1DD1CA3900F3130A /* UIButton+XCAdd.m in Sources */,
 				ED8A0B821DD1DB6600F3130A /* UIDevice+XCAdd.m in Sources */,
 				ED8FA0141DCC8A3400902066 /* ViewController.m in Sources */,

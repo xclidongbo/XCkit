@@ -22,13 +22,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)scrollToRight;
 
 
-- (void)scorllToTopAnimated:(void)animated;
+- (void)scrollToTopAnimated:(BOOL)animated;
 
-- (void)scorllToBottomAnimated:(void)animated;
+- (void)scrollToBottomAnimated:(BOOL)animated;
 
-- (void)scorllToLeftAnimated:(void)animated;
+- (void)scrollToLeftAnimated:(BOOL)animated;
 
-- (void)scorllToRightAnimated:(void)animated;
+- (void)scrollToRightAnimated:(BOOL)animated;
 
 
 @end
