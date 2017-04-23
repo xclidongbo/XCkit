@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
+/**
+ 手势的init方法,回调.
+ */
 @interface UIGestureRecognizer (XCAdd)
 
 - (instancetype)initWithActionBlock:(void(^)(UIGestureRecognizer * sender))actionBlock;

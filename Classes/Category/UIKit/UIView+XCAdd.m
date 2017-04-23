@@ -28,9 +28,7 @@ static char kTapActionBlock;
 - (void)tapAction:(UITapGestureRecognizer *)sender {
     if (sender.state == UIGestureRecognizerStateRecognized) {
         void(^actionBlock)(UITapGestureRecognizer *) = objc_getAssociatedObject(self, &kTapActionBlock);
-        if (actionBlock) {
-            actionBlock(sender);
-        }
+        if (actionBlock) actionBlock(sender);
     }
 }
 

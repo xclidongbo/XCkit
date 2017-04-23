@@ -10,6 +10,14 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface UIView (XCAdd)
 
+
+
+
+/**
+ UIView添加Tap点击事件
+
+ @param actionBlock 点击事件的回调
+ */
 - (void)tapActionWithBlock:(void(^)(UITapGestureRecognizer * sender))actionBlock;
 
 @end
