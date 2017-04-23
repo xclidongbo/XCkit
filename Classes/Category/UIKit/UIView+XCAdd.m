@@ -33,4 +33,12 @@ static char kTapActionBlock;
 }
 
 
+- (void)setRectCorners:(UIRectCorner)rectCorners cornerRadii:(CGSize)cornerRadii {
+    CGRect bounds = self.bounds;
+    UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:bounds byRoundingCorners:rectCorners cornerRadii:cornerRadii];
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.path = maskPath.CGPath;
+    maskLayer.frame = bounds;
+    self.layer.mask = maskLayer;
+}
 @end

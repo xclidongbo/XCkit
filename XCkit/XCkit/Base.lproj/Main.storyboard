@@ -40,6 +40,14 @@
                                     <color key="titleColor" red="0.76078431369999999" green="0.7843137255" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uki-yZ-ybQ">
+                                <rect key="frame" x="137.5" y="150" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.79215686269999996" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2sM-KK-4OK"/>
+                                    <constraint firstAttribute="height" constant="100" id="BBo-EC-NmR"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -49,11 +57,14 @@
                             <constraint firstItem="wCu-ja-NVG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="i44-P4-TeW"/>
                             <constraint firstItem="pHn-fw-VGP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="rPY-eY-9uv"/>
                             <constraint firstItem="wCu-ja-NVG" firstAttribute="top" secondItem="pHn-fw-VGP" secondAttribute="bottom" constant="10" id="rQN-qb-MzH"/>
+                            <constraint firstItem="uki-yZ-ybQ" firstAttribute="top" secondItem="wCu-ja-NVG" secondAttribute="bottom" constant="10" id="u3g-8S-DbK"/>
+                            <constraint firstItem="uki-yZ-ybQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wD6-Lb-G6M"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btn1" destination="pHn-fw-VGP" id="vHr-zj-OSa"/>
                         <outlet property="btn2" destination="wCu-ja-NVG" id="aJp-pd-YSe"/>
+                        <outlet property="subView" destination="uki-yZ-ybQ" id="Ulw-n1-heu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

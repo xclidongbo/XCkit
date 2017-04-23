@@ -16,8 +16,10 @@
 @interface ViewController () <UITableViewDataSource,UITabBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
-
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
+
+@property (weak, nonatomic) IBOutlet UIView *subView;
+
 
 @end
 
@@ -32,6 +34,8 @@ static NSString * identifiers = @"cell";
     [self.btn1 setBackgroundImageWithRadius:5 lineWidth:0 strokeColor:nil fillColor:[UIColor orangeColor] forState:UIControlStateHighlighted];
     [self.btn2 setBackgroundImageWithRadius:5 lineWidth:1 strokeColor:[UIColor orangeColor] fillColor:[UIColor clearColor] forState:UIControlStateNormal];
     [self.btn2 setBackgroundImageWithRadius:5 lineWidth:1 strokeColor:[UIColor redColor] fillColor:[UIColor clearColor] forState:UIControlStateHighlighted];
+    
+    [self.subView setRectCorners:UIRectCornerTopRight cornerRadii:CGSizeMake(100, 100)];
     
     
     
