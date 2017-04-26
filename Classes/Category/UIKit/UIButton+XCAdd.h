@@ -70,6 +70,21 @@ typedef void(^ActionBlock)(UIButton * sender);
                             forState:(UIControlState)state;
 
 
+/**
+ 设置backgroundImage 为渐变色的矩形,圆角矩形,圆形的button;
+ 用法示例:
+ [self.btn setBackgroundImageWithGradientCornerRadius:10 colors:@[[UIColor redColor],[UIColor blueColor]] locations:@[@0,@1.0] forState:UIControlStateNormal];
+
+ @param radius 圆角半径
+ @param colors 颜色的数组
+ @param locations 比例的数组
+ @param state 控制状态
+ */
+- (void)setBackgroundImageWithGradientCornerRadius:(CGFloat)radius
+                                            colors:(NSArray <UIColor *>*)colors
+                                         locations:(NSArray *)locations
+                                          forState:(UIControlState)state;
+
 @end
 
 NS_ASSUME_NONNULL_END

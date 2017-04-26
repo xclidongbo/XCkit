@@ -30,12 +30,18 @@ static NSString * identifiers = @"cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.btn1 setBackgroundImageWithRadius:5 lineWidth:0 strokeColor:nil fillColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [self.btn1 setBackgroundImageWithRadius:5 lineWidth:0 strokeColor:nil fillColor:[UIColor orangeColor] forState:UIControlStateHighlighted];
-    [self.btn2 setBackgroundImageWithRadius:5 lineWidth:1 strokeColor:[UIColor orangeColor] fillColor:[UIColor clearColor] forState:UIControlStateNormal];
-    [self.btn2 setBackgroundImageWithRadius:5 lineWidth:1 strokeColor:[UIColor redColor] fillColor:[UIColor clearColor] forState:UIControlStateHighlighted];
+//    [self.btn1 setBackgroundImageWithRadius:5 lineWidth:0 strokeColor:nil fillColor:[UIColor blueColor] forState:UIControlStateNormal];
+//    [self.btn1 setBackgroundImageWithRadius:5 lineWidth:0 strokeColor:nil fillColor:[UIColor orangeColor] forState:UIControlStateHighlighted];
+//    [self.btn2 setBackgroundImageWithRadius:5 lineWidth:1 strokeColor:[UIColor orangeColor] fillColor:[UIColor clearColor] forState:UIControlStateNormal];
+//    [self.btn2 setBackgroundImageWithRadius:5 lineWidth:1 strokeColor:[UIColor redColor] fillColor:[UIColor clearColor] forState:UIControlStateHighlighted];
+//    
+//    [self.subView setRectCorners:UIRectCornerTopRight cornerRadii:CGSizeMake(100, 100)];
     
-    [self.subView setRectCorners:UIRectCornerTopRight cornerRadii:CGSizeMake(100, 100)];
+    
+//    [self.btn1 setBackgroundImageWithGradientRoundRectRadius:10 colors:@[[UIColor redColor],[UIColor blueColor]] locations:@[@0,@1.0] forState:UIControlStateNormal];
+//    [self.subView addGradientLayerWithColors:@[[UIColor redColor],[UIColor blueColor]] locations:@[@0,@1.0] direction:NSGradientDirectionTypeLeftToRight];
+//    [self.subView setRectCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(10, 10)];
+    
     
     
     

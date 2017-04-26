@@ -41,4 +41,53 @@ static char kTapActionBlock;
     maskLayer.frame = bounds;
     self.layer.mask = maskLayer;
 }
+
+
+
+- (void)addGradientLayerWithColors:(NSArray *)colors
+                         locations:(NSArray <NSNumber *>*)locations
+                        startPoint:(CGPoint)startPoint
+                          endPoint:(CGPoint)endPoint {
+    CAGradientLayer * gradientLayer = [CAGradientLayer layer];
+    gradientLayer.colors = colors;
+    gradientLayer.locations = locations;
+    gradientLayer.startPoint = startPoint;
+    gradientLayer.endPoint = endPoint;
+    gradientLayer.frame = self.bounds;
+    [self.layer addSublayer: gradientLayer];
+}
+
+- (void)addGradientLayerWithColors:(NSArray <UIColor *>*)colors
+                         locations:(NSArray <NSNumber *>*)locations
+                         direction:(NSGradientDirectionType)direction{
+    NSMutableArray * cls = [NSMutableArray arrayWithCapacity:colors.count];
+    [colors enumerateObjectsUsingBlock:^(UIColor * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [cls addObject:(__bridge id)obj.CGColor];
+    }];
+    
+    CAGradientLayer * gradientLayer = [CAGradientLayer layer];
+    gradientLayer.colors = cls;
+    gradientLayer.locations = locations;
+    CGPoint startPoint;
+    CGPoint endPoint;
+    switch (direction) {
+        case NSGradientDirectionTypeTopToBottom:
+            startPoint = CGPointMake(0, 0);
+            endPoint = CGPointMake(0, 1.0);
+            break;
+        case NSGradientDirectionTypeTopLeftToBottomRight:
+            startPoint = CGPointMake(0, 0);
+            endPoint = CGPointMake(1.0, 1.0);
+            break;
+        default:
+            startPoint = CGPointMake(0, 0);
+            endPoint = CGPointMake(1.0, 0);
+            break;
+    }
+    gradientLayer.startPoint = startPoint;
+    gradientLayer.endPoint = endPoint;
+    gradientLayer.frame = self.bounds;
+    [self.layer addSublayer:gradientLayer];
+}
+
 @end

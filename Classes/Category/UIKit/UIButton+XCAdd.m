@@ -97,6 +97,68 @@ static char btnKey;
     return image;
 }
 
+- (UIImage *)imageWithGradientRoundRectRadius:(CGFloat)radius colors:(NSArray <UIColor *>*)colors locations:(NSArray *)locations{
+    //创建CGContextRef
+    UIGraphicsBeginImageContext(self.bounds.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    //创建CGMutablePathRef
+    CGMutablePathRef path = CGPathCreateMutable();
+    
+    //绘制Path
+    CGPathAddRoundedRect(path, nil, self.bounds, radius, radius);
+    CGPathCloseSubpath(path);
+    
+    
+    //以下为绘制渐变的方法
+    //线性渐变
+//    UIColor * startColor = [UIColor redColor];
+//    UIColor * endColor = [UIColor blueColor];
+    
+    NSMutableArray * cls = [NSMutableArray arrayWithCapacity:colors.count];
+    [colors enumerateObjectsUsingBlock:^(UIColor * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [cls addObject:(__bridge id)obj.CGColor];
+    }];
+    
+    CGFloat locs[] = {};
+    for (int i = 0; i < locations.count; i++) {
+        NSNumber * num =locations[i];
+        locs[i] = num.floatValue;
+    }
+    
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+//    CGFloat locations[] = { 0.0, 1.0 };
+    
+//    NSArray * colors = @[(__bridge id)startColor.CGColor, (__bridge id)endColor.CGColor];
+    
+    
+    
+    CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)cls, locs);
+    
+    CGRect pathRect = CGPathGetBoundingBox(path);
+    
+    //具体方向根据需求修改
+    CGPoint startPoint = CGPointMake(CGRectGetMinX(pathRect), CGRectGetMidY(pathRect));
+    CGPoint endPoint = CGPointMake(CGRectGetMaxX(pathRect), CGRectGetMidY(pathRect));
+    
+    CGContextSaveGState(context);
+    CGContextAddPath(context, path);
+    CGContextClip(context);
+    CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, 0);
+    CGContextRestoreGState(context);
+    CGColorSpaceRelease(colorSpace);
+    //以上
+    
+    //释放
+    CGPathRelease(path);
+    //从Context中获取图像.并显示再界面上.
+    
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
 - (void)setBackgroundImageWithRadius:(CGFloat)radius
                            lineWidth:(CGFloat)lineWidth
                          strokeColor:(UIColor *_Nullable)strokeColor
@@ -105,6 +167,19 @@ static char btnKey;
     UIImage * image = [self imageWithRadius:radius lineWidth:lineWidth strokeColor:strokeColor fillColor:fillColor];
     [self setBackgroundImage:image forState:state];
 }
+
+
+- (void)setBackgroundImageWithGradientCornerRadius:(CGFloat)radius
+                                            colors:(NSArray <UIColor *>*)colors
+                                         locations:(NSArray *)locations
+                                          forState:(UIControlState)state {
+    UIImage * image = [self imageWithGradientRoundRectRadius:radius colors:colors locations:locations];
+    [self setBackgroundImage:image forState:state];
+}
+
+
+
+
 
 
 
