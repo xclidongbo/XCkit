@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED4D0F551DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4D0F541DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m */; };
+		ED55EDEA1EB0F0950080A7EC /* UIColor+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED55EDE91EB0F0950080A7EC /* UIColor+XCAdd.m */; };
 		ED84DFA31DE2C78500F5E8B3 /* UIView+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED84DFA21DE2C78500F5E8B3 /* UIView+XCAdd.m */; };
 		ED8A0B7D1DD1CA3900F3130A /* UIButton+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B791DD1CA3900F3130A /* UIButton+XCAdd.m */; };
 		ED8A0B7E1DD1CA3900F3130A /* UIScrollView+XCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A0B7B1DD1CA3900F3130A /* UIScrollView+XCAdd.m */; };
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		ED4D0F531DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+XCAdd.h"; sourceTree = "<group>"; };
 		ED4D0F541DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+XCAdd.m"; sourceTree = "<group>"; };
+		ED55EDE81EB0F0950080A7EC /* UIColor+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XCAdd.h"; sourceTree = "<group>"; };
+		ED55EDE91EB0F0950080A7EC /* UIColor+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XCAdd.m"; sourceTree = "<group>"; };
 		ED84DFA11DE2C78500F5E8B3 /* UIView+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XCAdd.h"; sourceTree = "<group>"; };
 		ED84DFA21DE2C78500F5E8B3 /* UIView+XCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XCAdd.m"; sourceTree = "<group>"; };
 		ED8A0B781DD1CA3900F3130A /* UIButton+XCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XCAdd.h"; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				ED4D0F541DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m */,
 				ED84DFA11DE2C78500F5E8B3 /* UIView+XCAdd.h */,
 				ED84DFA21DE2C78500F5E8B3 /* UIView+XCAdd.m */,
+				ED55EDE81EB0F0950080A7EC /* UIColor+XCAdd.h */,
+				ED55EDE91EB0F0950080A7EC /* UIColor+XCAdd.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				ED8A0B871DD22DBE00F3130A /* UIAlertController+XCAdd.m in Sources */,
 				ED4D0F551DDEEDE9005787EA /* UIGestureRecognizer+XCAdd.m in Sources */,
 				ED8A0B7E1DD1CA3900F3130A /* UIScrollView+XCAdd.m in Sources */,
+				ED55EDEA1EB0F0950080A7EC /* UIColor+XCAdd.m in Sources */,
 				ED84DFA31DE2C78500F5E8B3 /* UIView+XCAdd.m in Sources */,
 				ED8A0B8A1DD2F8F300F3130A /* UIImage+XCAdd.m in Sources */,
 				ED8A0B7D1DD1CA3900F3130A /* UIButton+XCAdd.m in Sources */,

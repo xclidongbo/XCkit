@@ -42,7 +42,8 @@ static NSString * identifiers = @"cell";
 //    [self.subView addGradientLayerWithColors:@[[UIColor redColor],[UIColor blueColor]] locations:@[@0,@1.0] direction:NSGradientDirectionTypeLeftToRight];
 //    [self.subView setRectCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(10, 10)];
     
-    
+//    self.btn1.backgroundColor = UIColorWithHex(333333);
+//    self.btn2.backgroundColor = UIColorWithHexAlpha(333333, 0.4);
     
     
 }

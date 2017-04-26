@@ -16,5 +16,6 @@
 #import "UIImage+XCAdd.h"
 #import "UIGestureRecognizer+XCAdd.h"
 #import "UIView+XCAdd.h"
+#import "UIColor+XCAdd.h"
 
 #endif /* XCCategories_h */
