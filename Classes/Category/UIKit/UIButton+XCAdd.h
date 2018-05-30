@@ -40,6 +40,7 @@ typedef void(^ActionBlock)(UIButton * sender);
 
 
 /**
+ 注意: 一定要设置完控件的约束后,再调用此方法,否则取不到titleLabel和image的size.
  最好不要设置UIButton的宽高约束,这样可以让图片和文字不会因为约束太小,而显示不完全.
 
  @param title 文字
