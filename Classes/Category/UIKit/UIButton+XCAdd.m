@@ -76,7 +76,7 @@ static char btnKey;
                  strokeColor:(UIColor * _Nullable)strokeColor
                    fillColor:(UIColor *)fillColor  {
     
-    //    [self.view layoutIfNeeded];
+    if (CGRectEqualToRect(self.bounds, CGRectZero)) [self layoutIfNeeded];
     CGRect bounds = self.bounds;
 //    CGFloat lineWidth = 1.0f;
     UIBezierPath * bezierPath = [UIBezierPath bezierPathWithRoundedRect:CGRectInset(bounds, lineWidth, lineWidth) cornerRadius:radius];
@@ -98,6 +98,8 @@ static char btnKey;
 }
 
 - (UIImage *)imageWithGradientRoundRectRadius:(CGFloat)radius colors:(NSArray <UIColor *>*)colors locations:(NSArray *)locations{
+    
+    if (CGRectEqualToRect(self.bounds, CGRectZero)) [self layoutIfNeeded];
     //创建CGContextRef
     UIGraphicsBeginImageContext(self.bounds.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
