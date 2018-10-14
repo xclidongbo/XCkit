@@ -72,3 +72,40 @@
 
 
 #endif /* XCCategoryMacro_h */
+
+
+#if __has_feature(objc_arc)
+/**
+ ARC下 完整单例的宏定义.
+ 用法: interface 下 XC_SINGLETON_INT;
+    implement 下 XC_SINGLETON_IMP
+ */
+#define XC_SINGLETON_INT XC_SINGLETON_INT_NAME(shareSingleton)
+#define XC_SINGLETON_INT_NAME(shareName) \
++ (instancetype)shareName;
+
+
+#define XC_SINGLETON_IMP XC_SINGLETON_IMP_NAME(shareSingleton)
+
+#define XC_SINGLETON_IMP_NAME(shareName) \
+static id singleton = nil;\
++ (instancetype)shareName {\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+singleton = [[super allocWithZone:NULL] init];\
+});\
+return singleton;\
+}\
++ (instancetype)allocWithZone:(struct _NSZone *)zone {\
+return [[self class] shareName];\
+}\
+- (id)copyWithZone:(NSZone *)zone {\
+return [[self class] shareName];\
+}\
+- (id)mutableCopyWithZone:(nullable NSZone *)zone {\
+return [[self class] shareName];\
+}
+
+#else
+
+#endif
