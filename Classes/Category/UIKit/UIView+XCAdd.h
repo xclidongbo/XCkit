@@ -51,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
-    UIView上添加渐变的内容
+    UIView上添加渐变色的内容
     用法:
     [self.subView addGradientLayerWithColors:@[(__bridge id)[UIColor redColor].CGColor, (__bridge id)[UIColor yellowColor].CGColor, (__bridge id)[UIColor blueColor].CGColor] locations:@[@0.3, @0.5, @1.0] startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1.0, 0)]
 
@@ -88,4 +88,37 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+NS_ASSUME_NONNULL_END
+
+
+NS_ASSUME_NONNULL_BEGIN
+@interface UIView (XCAnimation)
+
+
+/**
+ 左右晃动
+ 
+ @param duration 执行时间
+ @param dampingRatio 范围0.0f到1.0f 数值越小,震动效果越明显
+ @param velocity 初始速度, 数值越大,初始速度越快.
+ @param completion 结束后的回调.
+ */
+- (void)shakeWithDuration:(NSTimeInterval)duration
+   usingSpringWithDamping:(CGFloat)dampingRatio
+    initialSpringVelocity:(CGFloat)velocity
+               completion:(void (^)(BOOL finished))completion;
+
+
+/**
+ 左右晃动
+ duration .7
+ dampingRatio .2
+ velocity 10
+ @param completion 晃动结束后的回调
+ */
+- (void)shakeWithCompletion:(void (^)(BOOL finished))completion;
+
+
+
+@end
 NS_ASSUME_NONNULL_END

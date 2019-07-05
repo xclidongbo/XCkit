@@ -91,3 +91,24 @@ static char kTapActionBlock;
 }
 
 @end
+
+
+
+@implementation UIView (XCAnimation)
+
+
+- (void)shakeWithDuration:(NSTimeInterval)duration
+   usingSpringWithDamping:(CGFloat)dampingRatio
+    initialSpringVelocity:(CGFloat)velocity
+               completion:(void (^)(BOOL finished))completion {
+    self.transform = CGAffineTransformMakeTranslation(20, 0);
+    [UIView animateWithDuration:duration delay:0 usingSpringWithDamping:dampingRatio initialSpringVelocity:velocity options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.transform = CGAffineTransformIdentity;
+    } completion:completion];
+}
+
+
+- (void)shakeWithCompletion:(void (^)(BOOL finished))completion {
+    [self shakeWithDuration:.7 usingSpringWithDamping:.2 initialSpringVelocity:10 completion:completion];
+}
+@end
