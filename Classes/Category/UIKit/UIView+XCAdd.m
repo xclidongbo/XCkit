@@ -54,7 +54,8 @@ static char kTapActionBlock;
     gradientLayer.startPoint = startPoint;
     gradientLayer.endPoint = endPoint;
     gradientLayer.frame = self.bounds;
-    [self.layer addSublayer: gradientLayer];
+//    [self.layer addSublayer: gradientLayer];
+    [self.layer insertSublayer:gradientLayer atIndex:0];
 }
 
 - (void)addGradientLayerWithColors:(NSArray <UIColor *>*)colors
@@ -87,7 +88,8 @@ static char kTapActionBlock;
     gradientLayer.startPoint = startPoint;
     gradientLayer.endPoint = endPoint;
     gradientLayer.frame = self.bounds;
-    [self.layer addSublayer:gradientLayer];
+//    [self.layer addSublayer:gradientLayer];
+    [self.layer insertSublayer:gradientLayer atIndex:0];
 }
 
 @end
